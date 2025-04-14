@@ -1,0 +1,25 @@
+{
+  "name": "kasogi-labo",
+  "version": "1.0.0",
+  "description": "Kasagi Labo Progrramming Challenge A,B,C",
+  "scripts": {
+    "generate": "ts-node challenge-a/generate.ts",
+    "parse": "ts-node challenge-b/parse.ts",
+    "build": "tsc",
+    "start": "pnpm run parse",
+    "docker:build": "docker build -t kasagi-parser .",
+    "docker:run": "node docker-run.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Fandi Agus Riyanto",
+    "url": "https://github.com/fandiar"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
