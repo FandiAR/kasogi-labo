@@ -4,7 +4,7 @@
 
 - [Challenges](#challenges)
 - [Features](#features)
-- [Directory Structure](#directory)
+- [Directory Structure](#directory-structure)
 - [How to Run Manually](#run-manually)
 - [How to Run Via Docker](#run-via-docker)
 
