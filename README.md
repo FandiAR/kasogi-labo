@@ -1,6 +1,16 @@
-# Kasagi Labo Programming Challenges
+<h1 align="center">Kasagi Labo Programming Challenges</h1>
 
-## Challenge A
+## Table of Contents
+
+- [Challenges](#challenges)
+- [Features](#features)
+- [Directory Structure](#directory)
+- [How to Run Manually](#run-manually)
+- [How to Run Via Docker](#run-via-docker)
+
+## Challenges
+
+### Challenge A
 
 Generate 10MB file containing:
 
@@ -9,39 +19,72 @@ Generate 10MB file containing:
 - Real numbers
 - Alphanumeric strings (with spaces)
 
-### Cloning Repository
+### Challenge B
+
+Create a program that will read the generated file above and print to the console the object and
+its type. Spaces before and after the alphanumeric object must be stripped.
+
+## Features
+
+- Can generate four (4) types of printable random objects and store them in a single file, each object will be separated by a ",".
+- Can read the generated file above and print to the console the object and its type. Spaces before and after the alphanumeric object must be stripped.
+
+## Directory Structure
+
+```bash
+kasogi-labo/
+├── challenge-a
+│   └── generate.ts
+├── challenge-b
+│   └── parse.ts
+├── dist/
+├── node_modules/
+├── output/
+│   ├── data.txt
+│   └── result.txt
+├── .gitattributes
+├── .gitignore
+├── docker-run.js
+├── Dockerfile
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
+└── tsconfig.json
+```
+
+## Run Manually
+
+1. Cloning Repository
 
 ```bash
 git clone https://github.com/FandiAR/kasogi-labo.git
 ```
 
-### Manual Run:
-
-1. Go to directory
+2. Go to directory
 
 ```bash
 cd kasogi-labo
 ```
 
-2. Install package
+3. Install package
 
 ```bash
 pnpm i
 ```
 
-3. Generate printable random objects
+4. Generate printable random objects
 
 ```bash
 pnpm run generate
 ```
 
-4. Parse and print generated file above
+5. Parse and print generated file above
 
 ```bash
 pnpm run parse
 ```
 
-### Run using Docker:
+## Run via Docker:
 
 1. Build Docker image
 
@@ -49,7 +92,7 @@ pnpm run parse
 pnpm run docker:build
 ```
 
-2. Run
+2. Run Docker
 
 ```bash
 pnpm run docker:run
